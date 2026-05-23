@@ -274,7 +274,12 @@ footer{background:rgba(5,5,5,1);border-top:1px solid rgba(248,246,241,0.06);padd
         </div>
       </div>
       <p class="form-note"><strong>Note:</strong> This form submits your request. AKB will reach out via phone or email within 24 hours to confirm your slot and send a payment link. Payment is collected before the session.</p>
-      <button class="book-btn" onclick="submitBooking()">📅 Request My Consultation →</button>
+      <button class="book-btn" onclick="submitBooking()">📅 Request My Consultation →<<a href="https://calendly.com/YOUR-NAME-HERE" 
+   target="_blank" 
+   class="book-btn" 
+   style="display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;">
+  📅 Book & Pay via Calendly →
+</a>>
       <div class="success-msg" id="success-msg">
         <strong>✅ Request Received!</strong>
         <p>Thanks! AKB will contact you within 24 hours to confirm your session and send your payment link.</p>

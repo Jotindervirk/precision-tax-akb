@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precision Tax by AKB | Canadian Tax Tips & Consultations</title>
+<meta name="description" content="Precision Tax by AKB – Canadian tax tips, CRA help, refunds, credits, deductions. Book a paid consultation today. Call 647-691-5605.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#C8102E;--red-dark:#9B0A22;--gold:#F4C430;--black:#0A0A0A;
+  --off-white:#F8F6F1;--gray:#2A2A2A;--light-gray:#E8E4DB;--muted:#888;
+  --font-head:'Syne',sans-serif;--font-body:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--off-white);font-family:var(--font-body);font-size:16px;line-height:1.6;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2.5rem;background:rgba(10,10,10,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(248,246,241,0.08)}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo-icon{width:38px;height:38px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:14px;color:#fff;letter-spacing:-0.5px}
+.nav-logo-text{font-family:var(--font-head);font-size:15px;font-weight:700;letter-spacing:-0.3px}
+.nav-logo-text span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:rgba(248,246,241,0.7);text-decoration:none;font-size:14px;font-weight:400;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--red);color:#fff;padding:0.5rem 1.25rem;border-radius:6px;font-size:14px;font-weight:500;text-decoration:none;transition:background 0.2s}
+.nav-cta:hover{background:var(--red-dark)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:8rem 2.5rem 5rem;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(248,246,241,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(248,246,241,0.03) 1px,transparent 1px);background-size:60px 60px}
+.hero-accent{position:absolute;top:-100px;right:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(200,16,46,0.15) 0%,transparent 70%)}
+.hero-accent2{position:absolute;bottom:-50px;left:-100px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(244,196,48,0.08) 0%,transparent 70%)}
+.hero-content{position:relative;z-index:1;max-width:900px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,16,46,0.15);border:1px solid rgba(200,16,46,0.4);color:var(--gold);padding:6px 14px;border-radius:100px;font-size:12px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:2rem}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block}
+h1{font-family:var(--font-head);font-size:clamp(3rem,6vw,5.5rem);font-weight:800;line-height:1.0;letter-spacing:-2px;margin-bottom:1.5rem}
+h1 .accent{color:var(--red)}
+h1 .gold{color:var(--gold)}
+.hero-sub{font-size:1.15rem;color:rgba(248,246,241,0.65);max-width:540px;font-weight:300;line-height:1.75;margin-bottom:2.5rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:3.5rem}
+.btn-primary{background:var(--red);color:#fff;padding:0.85rem 2rem;border-radius:8px;font-size:15px;font-weight:500;text-decoration:none;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--red-dark)}
+.btn-secondary{background:transparent;color:var(--off-white);padding:0.85rem 2rem;border-radius:8px;font-size:15px;font-weight:400;text-decoration:none;transition:all 0.2s;border:1px solid rgba(248,246,241,0.2)}
+.btn-secondary:hover{border-color:rgba(248,246,241,0.5)}
+.hero-stats{display:flex;gap:2.5rem;flex-wrap:wrap}
+.stat-item .stat-num{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--gold);letter-spacing:-1px}
+.stat-item .stat-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px}
+.marquee-strip{background:var(--red);padding:12px 0;overflow:hidden;white-space:nowrap}
+.marquee-inner{display:inline-flex;animation:marquee 18s linear infinite}
+.marquee-item{padding:0 2rem;font-family:var(--font-head);font-size:13px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;color:#fff;display:inline-flex;align-items:center;gap:1rem}
+.marquee-item::after{content:'✦';opacity:0.5}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section{padding:5rem 2.5rem}
+.section-label{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:1rem}
+.section-title{font-family:var(--font-head);font-size:clamp(2rem,3.5vw,3rem);font-weight:800;letter-spacing:-1px;line-height:1.1;margin-bottom:1.5rem}
+.section-title span{color:var(--gold)}
+.services{background:var(--off-white);color:var(--black)}
+.services .section-label{color:var(--red)}
+.services .section-title{color:var(--black)}
+.services-intro{color:#444;max-width:520px;font-weight:300;margin-bottom:3.5rem;font-size:1.05rem}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.service-card{background:#fff;border:1.5px solid var(--light-gray);border-radius:16px;padding:2rem;position:relative;overflow:hidden;transition:all 0.25s}
+.service-card:hover{border-color:var(--red);transform:translateY(-4px);box-shadow:0 20px 40px rgba(200,16,46,0.1)}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transition:transform 0.25s;transform-origin:left}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{width:48px;height:48px;background:rgba(200,16,46,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:1.25rem}
+.service-name{font-family:var(--font-head);font-size:1.05rem;font-weight:700;color:var(--black);margin-bottom:0.5rem}
+.service-desc{font-size:0.9rem;color:#666;line-height:1.6;font-weight:300}
+.why{background:var(--gray)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1100px;margin:0 auto}
+.why-list{list-style:none;margin-top:2.5rem;display:flex;flex-direction:column;gap:1.25rem}
+.why-item{display:flex;align-items:flex-start;gap:1rem}
+.why-check{width:24px;height:24px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;color:#fff;font-size:12px;font-weight:700}
+.why-item-text strong{display:block;font-weight:500;margin-bottom:3px;font-size:15px}
+.why-item-text span{font-size:14px;color:rgba(248,246,241,0.55);font-weight:300}
+.why-visual{background:var(--black);border-radius:20px;padding:2.5rem;border:1px solid rgba(248,246,241,0.08)}
+.why-visual-title{font-family:var(--font-head);font-size:1.4rem;font-weight:700;margin-bottom:2rem;color:var(--gold)}
+.cra-tip{background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1rem}
+.cra-tip-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--red);margin-bottom:4px}
+.cra-tip-text{font-size:14px;color:rgba(248,246,241,0.75);font-weight:300;line-height:1.5}
+.cra-tip-amount{font-family:var(--font-head);font-size:1.3rem;font-weight:800;color:var(--gold);margin-top:6px}
+.booking{background:var(--black);position:relative;overflow:hidden;padding:5rem 2.5rem}
+.booking::before{content:'';position:absolute;top:-200px;right:-150px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,16,46,0.1) 0%,transparent 70%)}
+.booking-inner{max-width:780px;margin:0 auto;position:relative;z-index:1}
+.booking-intro{color:rgba(248,246,241,0.6);font-size:1.05rem;font-weight:300;margin-bottom:3rem;line-height:1.7}
+.booking-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;margin-bottom:3rem}
+.booking-card{background:rgba(248,246,241,0.04);border:1px solid rgba(248,246,241,0.1);border-radius:16px;padding:1.75rem;transition:all 0.25s;cursor:pointer;position:relative}
+.booking-card:hover,.booking-card.selected{background:rgba(200,16,46,0.1);border-color:var(--red)}
+.booking-card.popular::after{content:'Most Popular';position:absolute;top:-10px;right:16px;background:var(--gold);color:var(--black);font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;letter-spacing:0.5px;text-transform:uppercase}
+.booking-card-name{font-family:var(--font-head);font-weight:700;font-size:1rem;margin-bottom:6px}
+.booking-card-price{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--gold);letter-spacing:-1px;margin-bottom:4px}
+.booking-card-price span{font-size:14px;font-weight:400;color:var(--muted);letter-spacing:0}
+.booking-card-desc{font-size:13px;color:rgba(248,246,241,0.5);font-weight:300;line-height:1.5}
+.booking-form{background:rgba(248,246,241,0.04);border:1px solid rgba(248,246,241,0.1);border-radius:20px;padding:2.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:13px;color:rgba(248,246,241,0.6);margin-bottom:6px;font-weight:400}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(248,246,241,0.06);border:1px solid rgba(248,246,241,0.12);border-radius:8px;padding:0.75rem 1rem;color:var(--off-white);font-family:var(--font-body);font-size:15px;outline:none;transition:border-color 0.2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--red)}
+.form-group select option{background:var(--black)}
+.form-group textarea{resize:vertical;min-height:90px}
+.form-note{font-size:12px;color:var(--muted);margin-bottom:1.5rem;line-height:1.5}
+.form-note strong{color:rgba(248,246,241,0.6)}
+.book-btn{width:100%;background:var(--red);color:#fff;border:none;padding:1rem;border-radius:10px;font-family:var(--font-head);font-size:1rem;font-weight:700;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:8px}
+.book-btn:hover{background:var(--red-dark)}
+.success-msg{display:none;background:rgba(0,200,100,0.1);border:1px solid rgba(0,200,100,0.3);border-radius:12px;padding:1.5rem;text-align:center;margin-top:1rem}
+.success-msg.show{display:block}
+.success-msg p{color:rgba(248,246,241,0.8);font-size:15px}
+.success-msg strong{color:#4ade80;display:block;font-family:var(--font-head);font-size:1.2rem;margin-bottom:6px}
+.topics{background:var(--off-white);color:var(--black)}
+.topics-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:2.5rem}
+.topic-pill{background:#fff;border:1.5px solid var(--light-gray);border-radius:100px;padding:8px 18px;font-size:13px;font-weight:500;color:#333;display:flex;align-items:center;gap:6px;transition:all 0.2s}
+.topic-pill:hover{border-color:var(--red);color:var(--red)}
+.contact{background:var(--black)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;max-width:1000px;margin:0 auto}
+.contact-info{margin-top:2rem}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;margin-bottom:2rem}
+.contact-item-icon{width:44px;height:44px;background:rgba(200,16,46,0.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.contact-item-text strong{display:block;font-size:15px;font-weight:500;margin-bottom:3px}
+.contact-item-text span{font-size:14px;color:var(--muted)}
+.social-links{display:flex;gap:10px;margin-top:1.5rem;flex-wrap:wrap}
+.social-link{background:rgba(248,246,241,0.06);border:1px solid rgba(248,246,241,0.1);border-radius:8px;padding:10px 16px;font-size:13px;color:rgba(248,246,241,0.7);text-decoration:none;transition:all 0.2s}
+.social-link:hover{background:rgba(200,16,46,0.15);border-color:rgba(200,16,46,0.4);color:var(--off-white)}
+footer{background:rgba(5,5,5,1);border-top:1px solid rgba(248,246,241,0.06);padding:2.5rem;text-align:center}
+.footer-logo{font-family:var(--font-head);font-size:1.1rem;font-weight:800;margin-bottom:0.5rem}
+.footer-logo span{color:var(--gold)}
+.footer-disc{font-size:12px;color:var(--muted);max-width:500px;margin:0.5rem auto 0;line-height:1.6}
+@media(max-width:768px){
+  nav{padding:1rem 1.25rem}
+  .nav-links{display:none}
+  .hero{padding:7rem 1.25rem 4rem}
+  section{padding:4rem 1.25rem}
+  .booking{padding:4rem 1.25rem}
+  .why-grid,.contact-grid{grid-template-columns:1fr;gap:2rem}
+  .form-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-icon">PT</div>
+    <span class="nav-logo-text">Precision Tax <span>by AKB</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#topics">Tax Tips</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta">Book Consultation</a>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"><div class="hero-grid"></div><div class="hero-accent"></div><div class="hero-accent2"></div></div>
+  <div class="hero-content">
+    <div class="hero-badge">🍁 Canadian Tax Tips Daily</div>
+    <h1>Stop Leaving<br><span class="accent">CRA Money</span><br>on the Table<span class="gold">.</span></h1>
+    <p class="hero-sub">Refunds · Credits · Deductions · CRA Help. We help Canadians get back what they're owed — legally, accurately, and fast. Education only, not financial advice.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">📅 Book a Paid Consultation</a>
+      <a href="#services" class="btn-secondary">See What We Cover →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">927+</div><div class="stat-label">Followers Helped</div></div>
+      <div class="stat-item"><div class="stat-num">56+</div><div class="stat-label">Tax Tips Posted</div></div>
+      <div class="stat-item"><div class="stat-num">$8K+</div><div class="stat-label">In Benefits Uncovered</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-inner">
+    <span class="marquee-item">Childcare Deductions</span><span class="marquee-item">First Home Savings</span>
+    <span class="marquee-item">Grocery Benefit</span><span class="marquee-item">Northern Resident Deduction</span>
+    <span class="marquee-item">Parent Tax Credits</span><span class="marquee-item">CRA Refunds</span>
+    <span class="marquee-item">HST Returns</span><span class="marquee-item">Small Business</span>
+    <span class="marquee-item">Childcare Deductions</span><span class="marquee-item">First Home Savings</span>
+    <span class="marquee-item">Grocery Benefit</span><span class="marquee-item">Northern Resident Deduction</span>
+    <span class="marquee-item">Parent Tax Credits</span><span class="marquee-item">CRA Refunds</span>
+    <span class="marquee-item">HST Returns</span><span class="marquee-item">Small Business</span>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <p class="section-label">What We Cover</p>
+  <h2 class="section-title" style="color:var(--black)">Tax Services &amp; <span style="color:var(--red)">Education</span></h2>
+  <p class="services-intro">We break down the credits, benefits, and deductions most Canadians never knew they qualified for.</p>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">💰</div><div class="service-name">CRA Refunds &amp; Credits</div><div class="service-desc">Maximize what comes back to you. We help you understand every credit you're entitled to under Canadian tax law.</div></div>
+    <div class="service-card"><div class="service-icon">👨‍👩‍👧</div><div class="service-name">Childcare &amp; Parent Benefits</div><div class="service-desc">From babysitting deductions to the Eligible Dependant Credit — up to $16,000 back if you support parents or kids.</div></div>
+    <div class="service-card"><div class="service-icon">🏠</div><div class="service-name">First Home Savings (FHSA)</div><div class="service-desc">The government will help you buy your first home. Up to $8,000 in free money most Canadians are missing out on.</div></div>
+    <div class="service-card"><div class="service-icon">🧾</div><div class="service-name">Small Business &amp; Self-Employed</div><div class="service-desc">Uber/Lyft drivers, freelancers, and contractors: know your HST obligations and deductions before CRA comes knocking.</div></div>
+    <div class="service-card"><div class="service-icon">🌍</div><div class="service-name">Northern Resident Deduction</div><div class="service-desc">Living in remote zones? Get up to $8,000 back. We cover every province from Manitoba to Yukon.</div></div>
+    <div class="service-card"><div class="service-icon">📞</div><div class="service-name">CRA Help &amp; Navigation</div><div class="service-desc">Fastest way to call CRA, deal with audits, fix filing errors, and understand what the CRA won't tell you.</div></div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="why-grid">
+    <div>
+      <p class="section-label">Why Choose Us</p>
+      <h2 class="section-title">We Know the <span>System</span></h2>
+      <ul class="why-list">
+        <li class="why-item"><div class="why-check">✓</div><div class="why-item-text"><strong>Real, Practical Knowledge</strong><span>We cover what your accountant probably never told you — legally and clearly.</span></div></li>
+        <li class="why-item"><div class="why-check">✓</div><div class="why-item-text"><strong>Constantly Updated</strong><span>CRA rules change every year. We stay on top of every new benefit and deadline.</span></div></li>
+        <li class="why-item"><div class="why-check">✓</div><div class="why-item-text"><strong>Province-by-Province Breakdowns</strong><span>From BC to Newfoundland — we cover the deductions specific to where you live.</span></div></li>
+        <li class="why-item"><div class="why-check">✓</div><div class="why-item-text"><strong>Direct Access</strong><span>Call or DM us directly. No waiting rooms, no phone trees.</span></div></li>
+        <li class="why-item"><div class="why-check">✓</div><div class="why-item-text"><strong>Education First</strong><span>We empower you to understand your taxes — not just hand over numbers.</span></div></li>
+      </ul>
+    </div>
+    <div class="why-visual">
+      <div class="why-visual-title">💡 Did You Know?</div>
+      <div class="cra-tip"><div class="cra-tip-label">First Home Savings Account</div><div class="cra-tip-text">Most Canadians don't even know this program exists. The government will help you buy your first home.</div><div class="cra-tip-amount">Up to $8,000 free</div></div>
+      <div class="cra-tip"><div class="cra-tip-label">Eligible Dependant Credit</div><div class="cra-tip-text">If you're supporting your parents or a dependant, CRA owes you money back — most people miss this.</div><div class="cra-tip-amount">Up to $16,000 back</div></div>
+      <div class="cra-tip"><div class="cra-tip-label">Childcare via Babysitting</div><div class="cra-tip-text">Your parents babysitting = a tax deduction. Only works if you paid them properly though.</div><div class="cra-tip-amount">Up to $1,500 saved</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="booking-inner">
+    <p class="section-label">Work With Us</p>
+    <h2 class="section-title">Book a <span>Paid Consultation</span></h2>
+    <p class="booking-intro">Get personalized, one-on-one guidance on your specific tax situation. All consultations are educational and done via phone or video call.</p>
+    <div class="booking-options">
+      <div class="booking-card" id="pkg1" onclick="selectPkg('pkg1','Quick Call – 30 min','$49')">
+        <div class="booking-card-name">Quick Call</div>
+        <div class="booking-card-price">$49 <span>/ 30 min</span></div>
+        <div class="booking-card-desc">One focused tax question answered in depth. Great for quick CRA guidance.</div>
+      </div>
+      <div class="booking-card popular selected" id="pkg2" onclick="selectPkg('pkg2','Full Review – 60 min','$99')">
+        <div class="booking-card-name">Full Review</div>
+        <div class="booking-card-price">$99 <span>/ 60 min</span></div>
+        <div class="booking-card-desc">Complete tax situation review. Credits, deductions, refunds, and a personalized action plan.</div>
+      </div>
+      <div class="booking-card" id="pkg3" onclick="selectPkg('pkg3','Business Deep Dive – 90 min','$149')">
+        <div class="booking-card-name">Business Deep Dive</div>
+        <div class="booking-card-price">$149 <span>/ 90 min</span></div>
+        <div class="booking-card-desc">For self-employed, Uber/Lyft drivers, and small business owners. HST, expenses, and more.</div>
+      </div>
+    </div>
+    <div class="booking-form">
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" id="fname" placeholder="Jane"></div>
+        <div class="form-group"><label>Last Name</label><input type="text" id="lname" placeholder="Smith"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email Address</label><input type="email" id="email" placeholder="jane@example.com"></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" id="phone" placeholder="647-xxx-xxxx"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Province</label>
+          <select id="province">
+            <option>Ontario</option><option>British Columbia</option><option>Alberta</option><option>Quebec</option>
+            <option>Manitoba</option><option>Saskatchewan</option><option>Nova Scotia</option><option>New Brunswick</option>
+            <option>Newfoundland &amp; Labrador</option><option>PEI</option><option>Yukon</option>
+            <option>Northwest Territories</option><option>Nunavut</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Package Selected</label>
+          <input type="text" id="pkg-display" value="Full Review – 60 min ($99)" readonly style="opacity:0.7">
+        </div>
+      </div>
+      <div class="form-group"><label>What tax question or situation can we help with?</label>
+        <textarea id="question" placeholder="e.g. I want to know if I qualify for the Northern Resident Deduction and what credits I might be missing..."></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Preferred Call Date</label><input type="date" id="pref-date"></div>
+        <div class="form-group"><label>Preferred Time</label>
+          <select id="pref-time">
+            <option>Morning (9am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option>
+          </select>
+        </div>
+      </div>
+      <p class="form-note"><strong>Note:</strong> This form submits your request. AKB will reach out via phone or email within 24 hours to confirm your slot and send a payment link. Payment is collected before the session.</p>
+      <button class="book-btn" onclick="submitBooking()">📅 Request My Consultation →</button>
+      <div class="success-msg" id="success-msg">
+        <strong>✅ Request Received!</strong>
+        <p>Thanks! AKB will contact you within 24 hours to confirm your session and send your payment link.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topics" id="topics">
+  <p class="section-label">Tax Topics We Cover</p>
+  <h2 class="section-title" style="color:var(--black)">Every <span style="color:var(--red)">Canadian Tax Topic</span> You Need</h2>
+  <div class="topics-grid">
+    <div class="topic-pill">👶 Childcare Expenses</div><div class="topic-pill">🍎 Grocery Benefit</div>
+    <div class="topic-pill">🏠 First Home Savings (FHSA)</div><div class="topic-pill">👨‍👩‍👧 Parent Tax Credits</div>
+    <div class="topic-pill">🚗 Uber / Lyft HST Return</div><div class="topic-pill">🌲 Northern Resident Deduction</div>
+    <div class="topic-pill">🏦 CRA Refunds &amp; Audits</div><div class="topic-pill">📊 Census Canada 2026</div>
+    <div class="topic-pill">🏢 Small Business Owners</div><div class="topic-pill">📞 Fastest Way to Call CRA</div>
+    <div class="topic-pill">🏡 Principal Residence Sale</div><div class="topic-pill">⏰ Tax Deadline Tips</div>
+    <div class="topic-pill">💊 Medical Expense Credits</div><div class="topic-pill">🎓 Tuition Tax Credit</div>
+    <div class="topic-pill">👴 Saskatchewan CRA Refunds</div><div class="topic-pill">🗂️ Direct Deposit Setup</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div>
+      <p class="section-label">Get In Touch</p>
+      <h2 class="section-title">Have a <span>Quick Question?</span></h2>
+      <div class="contact-info">
+        <div class="contact-item"><div class="contact-item-icon">📱</div><div class="contact-item-text"><strong>Phone / SMS</strong><span>647-691-5605</span></div></div>
+        <div class="contact-item"><div class="contact-item-icon">📸</div><div class="contact-item-text"><strong>Instagram</strong><span>@precision_tax_by_akb</span></div></div>
+        <div class="contact-item"><div class="contact-item-icon">💬</div><div class="contact-item-text"><strong>DM for Support</strong><span>Fastest response via Instagram DM</span></div></div>
+      </div>
+      <div class="social-links">
+        <a href="https://instagram.com/precision_tax_by_akb" class="social-link" target="_blank">📸 Instagram</a>
+        <a href="tel:6476915605" class="social-link">📞 Call Now</a>
+        <a href="sms:6476915605" class="social-link">💬 Text Us</a>
+      </div>
+    </div>
+    <div style="background:rgba(248,246,241,0.04);border:1px solid rgba(248,246,241,0.1);border-radius:20px;padding:2.5rem">
+      <p style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:0.75rem;color:var(--gold)">📍 Serving All of Canada</p>
+      <p style="font-size:14px;color:rgba(248,246,241,0.55);line-height:1.7;font-weight:300;margin-bottom:1.5rem">We help Canadians in every province get the most out of their taxes — from Ontario to the Northern territories.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">🏙️ Ontario</span>
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">🏔️ BC</span>
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">🌾 Alberta</span>
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">🌿 Manitoba</span>
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">🏒 Saskatchewan</span>
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">🌊 Nova Scotia</span>
+        <span style="background:rgba(200,16,46,0.12);border:1px solid rgba(200,16,46,0.25);border-radius:100px;padding:4px 12px;font-size:12px;color:rgba(248,246,241,0.7)">❄️ Yukon &amp; North</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Precision Tax <span>by AKB</span></div>
+  <p style="font-size:12px;color:var(--muted);margin-top:4px">📞 647-691-5605 &nbsp;|&nbsp; 📸 @precision_tax_by_akb</p>
+  <p class="footer-disc">This website is for educational purposes only and does not constitute financial or legal advice. Always consult a qualified professional for your specific situation.</p>
+  <p style="font-size:11px;color:rgba(136,136,136,0.4);margin-top:1rem">© 2026 Precision Tax by AKB · All rights reserved</p>
+</footer>
+
+<script>
+let selectedPkg={id:'pkg2',name:'Full Review – 60 min',price:'$99'};
+function selectPkg(id,name,price){
+  ['pkg1','pkg2','pkg3'].forEach(p=>{document.getElementById(p).classList.remove('selected')});
+  document.getElementById(id).classList.add('selected');
+  selectedPkg={id,name,price};
+  document.getElementById('pkg-display').value=name+' ('+price+')';
+}
+function submitBooking(){
+  const f=document.getElementById('fname').value;
+  const l=document.getElementById('lname').value;
+  const e=document.getElementById('email').value;
+  if(!f||!l||!e){alert('Please fill in your name and email to continue.');return;}
+  document.querySelector('.book-btn').textContent='Sending...';
+  setTimeout(()=>{
+    document.getElementById('success-msg').classList.add('show');
+    document.querySelector('.book-btn').textContent='✅ Request Sent!';
+    document.querySelector('.book-btn').style.background='#1a7a3a';
+  },1200);
+}
+</script>
+</body>
+</html>

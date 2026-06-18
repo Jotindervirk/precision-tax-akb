@@ -1,0 +1,20 @@
+{
+  "name": "precision-tax-akb",
+  "version": "1.0.0",
+  "description": "Precision Tax by AKB - Canadian Tax Tips & Consultations",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'No tests configured'"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  },
+  "keywords": [
+    "tax",
+    "canada",
+    "consultation"
+  ],
+  "author": "AKB",
+  "license": "ISC"
+}
